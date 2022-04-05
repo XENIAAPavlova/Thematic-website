@@ -24,10 +24,17 @@ h1 {
   color: var(--secondary-color);
 }
 
+p {
+  font-weight: normal;
+  font-size: 16px;
+  font-family: var(--default-font-family);
+  color: var(--branding-color);
+}
+
 .introduction {
   background-color: var(--light-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 120px 10px;
 }
 
 .introduction p {
@@ -53,4 +60,39 @@ h1 {
   color: var(--light-color);
   line-height: 27px;
   padding: 12px 20px;
+}
+.about-project {
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 2;
+  color: var(--branding-color);
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--secondary-color);
+  line-height: 27px;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.about-text {
+  font-family: var(--default-font-family);
+  font-weight: 200;
+  font-size: 18.5px;
+  line-height: 2;
+  color: var(--branding-color);
+  line-height: 1.5;
+}
+
+.project-description {
+  padding: 120 60px;
+}
+
+@media (max-width: 960px) {
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
