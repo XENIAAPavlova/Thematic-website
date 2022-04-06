@@ -55,11 +55,14 @@ p {
 }
 
 .btn-branding {
+  text-decoration: none;
+  text-transform: none;
   background: var(--branding-color);
   border-radius: 4px;
   color: var(--light-color);
   line-height: 27px;
   padding: 12px 20px;
+  cursor: pointer;
 }
 .about-project {
   font-family: var(--default-font-family);
@@ -80,7 +83,7 @@ p {
 .about-text {
   font-family: var(--default-font-family);
   font-weight: 200;
-  font-size: 18.5px;
+  font-size: 18px;
   line-height: 2;
   color: var(--branding-color);
   line-height: 1.5;
@@ -115,8 +118,9 @@ p {
   padding: 1px 5px;
 } */
 
-.open-source {
+.open-source p {
   text-decoration: none;
+  line-height: 1.5;
   font-family: var(--default-font-family);
   font-weight: 200;
   font-size: 18.5px;
