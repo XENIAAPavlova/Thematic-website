@@ -136,6 +136,33 @@ p {
   line-height: 2;
 }
 
+.info-section {
+  background-color: var(--light-color);
+  text-align: center;
+  padding: 60px 10px;
+}
+
+.info-section h2 {
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 2;
+  color: var(--branding-color);
+}
+
+.info-section p {
+  font-family: var(--default-font-family);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.card-button {
+  text-align: center;
+}
+
 @media (max-width: 960px) {
   .project-description {
     padding: 0;
