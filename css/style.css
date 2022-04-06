@@ -116,9 +116,11 @@ p {
 } */
 
 .open-source {
+  text-decoration: none;
   font-family: var(--default-font-family);
   font-weight: 200;
   font-size: 18.5px;
+  color: #38598b;
 }
 
 @media (max-width: 960px) {
