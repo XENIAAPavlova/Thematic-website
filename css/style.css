@@ -3,6 +3,7 @@
   --default-font-family: "Nunito";
   --secondary-color: #113f67;
   --light-color: #e7eaf6;
+  --highlighting-color: #A08DA5;
 }
 
 body {
@@ -29,6 +30,13 @@ p {
   font-size: 16px;
   font-family: var(--default-font-family);
   color: var(--branding-color);
+}
+
+a {
+    color: var(--branding-color);
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
 }
 
 .introduction {
@@ -64,6 +72,10 @@ p {
   padding: 12px 20px;
   cursor: pointer;
 }
+
+.btn-branding:hover{
+  color: var(--highlighting-color);
+}
 .about-project {
   font-family: var(--default-font-family);
   font-weight: 300;
@@ -73,11 +85,16 @@ p {
 }
 
 .btn-branding-outline {
-  color: var(--branding-color);
-  border: 1px solid var(--secondary-color);
+  color: var(--highlighting-color);
+  border: 1px solid var(--highlighting-color);
   line-height: 27px;
   padding: 12px 20px;
   border-radius: 4px;
+}
+
+.btn-branding-outline:hover {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 .about-text {
@@ -124,7 +141,7 @@ p {
   font-family: var(--default-font-family);
   font-weight: 200;
   font-size: 16px;
-  color: #38598b;
+  color: var(--branding-color);
 }
 
 .open-source p {
@@ -165,6 +182,25 @@ p {
 
 .box-shadow {
   box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--branding-color);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #A08DA5;
+}
+
+
+.navbar-light.navbar-brand {
+  font-family: var(--default-font-family);
+  color: var(--branding-color);
+}
+
+
+.bg-light {
+  background-color: var(--light-color);
 }
 
 @media (max-width: 960px) {
