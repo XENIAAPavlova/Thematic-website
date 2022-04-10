@@ -164,17 +164,10 @@ href {
   padding: 120 60px;
 }
 
-/* .social-link {
-  padding: 20px 0px;
-} */
-
 .social-link {
   text-decoration: none;
-  margin: 0 30px;
   color: var(--secondary-color);
   background: var(--light-color);
-  padding: 15px 18px;
-  border-radius: 50px;
   font-size: 20px;
 }
 
@@ -186,12 +179,6 @@ href {
   color: var(--branding-color);
   cursor: pointer;
 }
-
-/* .closing {
-  background-color: var(--light-color);
-  text-align: center;
-  padding: 1px 5px;
-} */
 
 .open-source {
   text-decoration: none;
