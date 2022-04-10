@@ -164,11 +164,11 @@ href {
   padding: 120 60px;
 }
 
-.social-link {
+/* .social-link {
   padding: 20px 0px;
-}
+} */
 
-.social-link a {
+.social-link {
   text-decoration: none;
   margin: 0 30px;
   color: var(--secondary-color);
