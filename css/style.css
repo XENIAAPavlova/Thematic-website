@@ -3,7 +3,7 @@
   --default-font-family: "Nunito";
   --secondary-color: #113f67;
   --light-color: #e7eaf6;
-  --highlighting-color: #A08DA5;
+  --highlighting-color: #a08da5;
 }
 
 body {
@@ -33,10 +33,11 @@ p {
 }
 
 a {
-    color: var(--branding-color);
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
+  color: var(--branding-color);
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .introduction {
@@ -73,7 +74,7 @@ a {
   cursor: pointer;
 }
 
-.btn-branding:hover{
+.btn-branding:hover {
   color: var(--highlighting-color);
 }
 .about-project {
@@ -84,17 +85,54 @@ a {
   color: var(--branding-color);
 }
 
+.about-section {
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 2;
+  color: var(--branding-color);
+  padding: 90px 10px;
+}
+
+.about-section h1 {
+  font-family: var(--default-font-family);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 2;
+  color: var(--secondary-color);
+}
+
+.about-section h2 {
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.about-section p {
+  font-family: var(--default-font-family);
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 2;
+  color: var(--branding-color);
+  line-height: 1.5;
+}
+
 .btn-branding-outline {
-  color: var(--highlighting-color);
-  border: 1px solid var(--highlighting-color);
+  text-decoration: none;
+  text-transform: none;
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: var(--light-color);
   line-height: 27px;
   padding: 12px 20px;
-  border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn-branding-outline:hover {
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
+  color: var(--highlighting-color);
 }
 
 .about-text {
@@ -189,15 +227,13 @@ a {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #A08DA5;
+  color: #a08da5;
 }
-
 
 .navbar-light.navbar-brand {
   font-family: var(--default-font-family);
   color: var(--branding-color);
 }
-
 
 .bg-light {
   background-color: var(--light-color);
@@ -207,5 +243,15 @@ a {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+
+  .about-section img {
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 }
