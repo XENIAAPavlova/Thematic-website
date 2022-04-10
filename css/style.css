@@ -164,7 +164,17 @@ href {
   padding: 120 60px;
 }
 
-.social-link {
+.social-link a {
+  text-decoration: none;
+  margin: 0 30px;
+  color: var(--secondary-color);
+  background: var(--light-color);
+  padding: 15px 18px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.social-icon {
   text-decoration: none;
   color: var(--secondary-color);
   background: var(--light-color);
