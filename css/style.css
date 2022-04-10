@@ -32,7 +32,8 @@ p {
   color: var(--branding-color);
 }
 
-a {
+a,
+href {
   color: var(--branding-color);
   font-family: var(--default-font-family);
   font-weight: 300;
@@ -63,6 +64,20 @@ a {
   color: var(--branding-color);
 }
 
+.contact {
+  background-color: var(--light-color);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact h2 {
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 2;
+  color: var(--branding-color);
+}
+
 .btn-branding {
   text-decoration: none;
   text-transform: none;
@@ -83,6 +98,7 @@ a {
   font-size: 20px;
   line-height: 2;
   color: var(--branding-color);
+  padding: 20px 20px;
 }
 
 .about-section {
@@ -138,7 +154,7 @@ a {
 .about-text {
   font-family: var(--default-font-family);
   font-weight: 200;
-  font-size: 17px;
+  font-size: 18.5px;
   line-height: 2;
   color: var(--branding-color);
   line-height: 1.5;
@@ -146,6 +162,10 @@ a {
 
 .project-description {
   padding: 120 60px;
+}
+
+.social-link {
+  padding: 20px 0px;
 }
 
 .social-link a {
@@ -218,12 +238,13 @@ a {
   text-align: center;
 }
 
-.box-shadow {
+/* .box-shadow {
   box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
-}
+} */
 
 .navbar-light .navbar-nav .nav-link {
   color: var(--branding-color);
+  font-family: var(--default-font-family);
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -236,7 +257,7 @@ a {
 }
 
 .bg-light {
-  background-color: var(--light-color);
+  background-color: white !important;
 }
 
 @media (max-width: 960px) {
@@ -245,13 +266,15 @@ a {
     text-align: center;
   }
 
-  .about-section {
-    text-align: center;
-    padding: 0;
-  }
-
   .about-section img {
     margin-top: 20px;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-section {
+    text-align: center;
+    padding: 0;
   }
 }
